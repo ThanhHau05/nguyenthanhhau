@@ -1,10 +1,13 @@
+import RoutesConfig from '~/Config/routes';
+
+//Pages
 import Home from '~/Pages/Home';
 import Profile from '~/Pages/Profile';
 
 // Public Routes
 const PublicRoutes = [
-    { path: '/', component: Home },
-    { path: '/profile', component: Profile, layout: null },
+    { path: RoutesConfig.home, component: Home },
+    { path: RoutesConfig.profile, component: Profile, layout: null },
 ];
 
 // Private Routes
