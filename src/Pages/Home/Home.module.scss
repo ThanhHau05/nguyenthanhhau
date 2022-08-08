@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 409px;
+    background-color: #2a3950;
+}
+
+.content-text {
+    top: 35%;
+    font-size: 65px;
+    text-align: center;
+}
+
+.text-typed {
+    color: #fff;
+    font-weight: 600;
+}
