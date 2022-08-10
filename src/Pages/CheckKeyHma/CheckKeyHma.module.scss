@@ -22,14 +22,13 @@
 }
 
 .process-note {
-    margin: 20px 0 5px;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .container-content {
-    margin: 10px;
-    margin-bottom: 5px;
+    margin: 10px 40px;
 }
 
 .process-note span {
@@ -37,9 +36,10 @@
 }
 
 .process-textarea {
-    width: 40%;
+    width: 100%;
     resize: none;
     outline: none;
+    padding: 10px;
     &::-webkit-scrollbar {
         width: 8px;
         height: 8px;
@@ -96,4 +96,82 @@
 .checked-icon {
     font-size: 22px;
     color: #43a047;
+}
+
+.result-textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-textarea,
+.success-textarea {
+    height: 50%;
+    padding: 10px;
+}
+
+.element-total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-textarea,
+.process {
+    width: 45%;
+}
+
+.process {
+    margin-top: 20px;
+}
+
+.error-textarea,
+.success-textarea {
+    width: 100%;
+    height: 40rem;
+    resize: none;
+    outline: none;
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.05);
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
+    }
+}
+
+.success-textarea {
+    margin-bottom: 10px;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background-color: transparent;
+    padding: 3px 5px;
+    border-radius: 12px;
+    border: 1px solid rgb(0 9 18 / 28%);
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+        border-color: rgb(0 9 18 / 73%);
+    }
+}
+
+.copy-error-value,
+.copy-success-value {
+    opacity: 0;
+}
+
+.error:hover + .copy-error-value,
+.success:hover + .copy-success-value {
+    opacity: 1;
+    transition: 0.3s;
 }
