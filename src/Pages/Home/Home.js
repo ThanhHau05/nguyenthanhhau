@@ -1,7 +1,6 @@
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
 import ReactTyped from 'react-typed';
-import Footer from '~/Layouts/Components/Footer';
 const cx = classNames.bind(styles);
 function Home() {
     return (
@@ -18,7 +17,6 @@ function Home() {
                     </span>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

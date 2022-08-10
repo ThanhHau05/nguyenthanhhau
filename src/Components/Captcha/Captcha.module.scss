@@ -1,0 +1,84 @@
+.captcha {
+    font-family: 'A.Casual.Handwritten.Pen';
+}
+
+.canvas {
+    border: 1px solid;
+    border-radius: 4%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.reload-button {
+    margin-left: 10px;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8%;
+    border: 0;
+    background-color: #8052ec;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: #603eb1;
+        transition: 0.3s;
+    }
+}
+
+.reload-icon {
+    font-size: 18px;
+}
+
+.user-input {
+    width: 149px;
+    outline: none;
+    margin: 10px 10px 10px 0;
+    padding: 4px 0;
+}
+
+.verification-button {
+    cursor: pointer;
+    padding: 6px;
+    background-color: #8052ec;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    &:hover {
+        background-color: #603eb1;
+        transition: 0.3s;
+    }
+}
+
+.wrapper p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.error_value_input {
+    border: 1px solid red;
+}
+
+.effect-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.4;
+}
+
+.element-input,
+.element-reload,
+.element-verification {
+    position: relative;
+    display: inline-flex;
+}
+
+.color-value-input {
+    color: red;
+}

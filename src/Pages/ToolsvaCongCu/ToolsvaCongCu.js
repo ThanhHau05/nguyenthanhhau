@@ -1,7 +1,6 @@
 import styles from './ToolsvaCongCu.module.scss';
 import classNames from 'classnames/bind';
 import Content from '~/Components/Content';
-import Footer from '~/Layouts/Components/Footer';
 import { Images } from '~/Images/Images';
 const cx = classNames.bind(styles);
 const ITEMS_TOOLS_OR_CONGCU = [
@@ -33,7 +32,6 @@ function ToolsvaCongCu() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>{_handlRenderItemTCC()}</div>
-            <Footer />
         </div>
     );
 }

@@ -19,7 +19,7 @@ const ITEMS_HEADER = [
 
 function Header() {
     const [count, setCount] = useState();
-    if (window.location.pathname === '/') {
+    if (window.location.pathname !== '/') {
         localStorage.removeItem('count_header');
     }
     useEffect(() => {

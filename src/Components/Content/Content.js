@@ -4,7 +4,6 @@ import Image from '~/Images/Image';
 const cx = classNames.bind(styles);
 
 function Content({ data, title }) {
-    console.log(data);
     const _handleRenderItems = () => {
         return data ? (
             data.map((item, index) => (
