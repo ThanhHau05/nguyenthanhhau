@@ -94,6 +94,7 @@ function Captcha({ isHighLight }) {
                     onChange={(e) => setCount(e.target.value)}
                     required
                     placeholder="Nhập mã xác minh..."
+                    spellCheck={false}
                 />
                 {isHighLight && <div className={cx('effect-background')} />}
             </div>
